@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="choice">        
+     <item>从相册中上传</item>            
+     <item>拍照上传</item>            
+  </string-array>
+</resources>

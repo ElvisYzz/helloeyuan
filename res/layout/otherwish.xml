@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/otherwish_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/achieving_time_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="8" >
+
+        <Button
+            android:id="@+id/achieving"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/achieving_btn_down" />
+
+        <Button
+            android:id="@+id/achieved"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/achieved_btn_up" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="416dp"
+            android:layout_marginTop="40dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:divider="@null"
+            android:dividerHeight="40dp"
+            android:footerDividersEnabled="false"
+            android:cacheColorHint="@null"
+            android:background="@null" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

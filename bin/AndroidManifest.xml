@@ -1,0 +1,104 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easyuan"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:icon="@drawable/ic_launcher"
+                  android:screenOrientation="portrait"
+                  android:name="com.easyuan.ui.splashScreen"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.easyuan.ui.MainTabActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle" />
+        <activity
+            android:name="com.easyuan.ui.WishActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.easyuan.ui.MessageActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.easyuan.ui.UserInfoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.easyuan.ui.SettingActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.easyuan.ui.SubmitActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.easyuan.ui.WishContentActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle" />
+        <activity
+            android:name="com.easyuan.ui.OtherWishActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle" />
+        <activity
+            android:name="com.easyuan.ui.AchievingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle" />
+        <activity
+            android:name="com.easyuan.ui.AchievedActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle" />
+        <activity
+            android:name="com.easyuan.ui.CommentActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.easyuan.ui.MyWishActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle" />
+        <activity
+            android:name="com.easyuan.ui.AboutActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle" />
+        <activity
+            android:name="com.easyuan.ui.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.easyuan.ui.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.easyuan.ui.RegisterInfoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/wishTitle"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <service
+            android:name="com.easyuan.push.PushService"
+            android:label="EYuan Push Notifications Service" >
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_margin="@dimen/space3"
+            android:layout_marginRight="@dimen/space3"
+            android:contentDescription="@string/avatar"
+            android:background="@drawable/avatar_bg" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_margin="@dimen/space3" />
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout1"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+        </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/comment_bg" >
+
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/space3"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/btn_font_size" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/comment_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space3"
+            android:background="@drawable/submit_comment_btn_up" />
+    </LinearLayout>
+
+</RelativeLayout>

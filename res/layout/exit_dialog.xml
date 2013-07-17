@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dlg_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/stopservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/space"
+            android:textSize="@dimen/btn_font_size"
+            android:text="@string/stopservice"
+            android:textColor="@color/textColor"
+            android:button="@drawable/checkbox" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/space3"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="@dimen/activity_vertical_margin"
+                android:layout_height="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/space"
+                android:gravity="center"
+                android:background="@color/buttonBackground"
+                android:textSize="@dimen/btn_font_size"
+                android:textColor="@color/textColor"
+                android:text="@string/exit" />
+
+            <Button
+                android:id="@+id/cancle_exit"
+                android:layout_width="@dimen/activity_vertical_margin"
+                android:layout_height="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/space"
+                android:gravity="center"
+                android:background="@color/buttonBackground"
+                android:textSize="@dimen/btn_font_size"
+                android:textColor="@color/textColor"
+                android:text="@string/cancle_exit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
