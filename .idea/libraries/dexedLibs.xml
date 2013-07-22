@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-2.2.2-c87cbee0f1d5e5ae94691bdce754e037.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/afinal-53e837deb647a967ca59599861be6417.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-c95f2e6c9a56c7c5464b5bdb63b3d855.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/WebSocket-34c0615ec9f7ff3293bc6f5cb24ec3de.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-6b9706532839ef60feb1192d129fb037.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/wmqtt-2a02ef48c395eb86742e86d5240e8c6d.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

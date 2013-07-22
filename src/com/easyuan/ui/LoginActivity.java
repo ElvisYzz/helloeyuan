@@ -1,13 +1,5 @@
 package com.easyuan.ui;
 
-import net.tsz.afinal.FinalActivity;
-import net.tsz.afinal.annotation.view.ViewInject;
-import net.tsz.afinal.http.AjaxCallBack;
-
-import com.easyuan.R;
-import com.easyuan.request.LoginRequest;
-import com.easyuan.toolkit.UrlConstructor;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +10,14 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.easyuan.R;
+import com.easyuan.request.LoginRequest;
+import com.easyuan.toolkit.UrlConstructor;
+
+import net.tsz.afinal.FinalActivity;
+import net.tsz.afinal.annotation.view.ViewInject;
+import net.tsz.afinal.http.AjaxCallBack;
 
 public class LoginActivity extends FinalActivity {
 	@ViewInject(id = R.id.login, click = "onLogin")
@@ -36,6 +36,7 @@ public class LoginActivity extends FinalActivity {
 		requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.login);
+        //自定义标题 此处直接使用一个view 一个button作为返回代替标题title
 		getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
 				R.layout.title_left);
 		Button mbtn_back = (Button) findViewById(R.id.back);
